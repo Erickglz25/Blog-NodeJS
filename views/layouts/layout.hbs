@@ -13,11 +13,44 @@
 </head>
 <body>
 	{{> header}}
-	<div class="container-fluid">
-			{{{body}}} 
+	<div id="sidebar-content">
+			<div class="container-fluid">
+					<div class="row">
+							<div class="col-md-9" id="sidebar-left">
+										{{{body}}}
+							</div>
+							<div class="col-md-3" id="sidebar-right">
+								<div class="dialog-y">
+									<h1 class="text-center regis">!Registrate!</h1>
+									<a href="#" class="btn btn-block btn-info dialog-a">Más Info!</a>
+								</div>
+								<div class="tags">
+									<a href="#" class="tag">razomaniento</a>
+									<p class="tag">tecnologia</p>
+									<p class="tag">cultura</p>
+									<p class="tag">Siglo XXI</p>
+									<p class="tag">politica</p>
+									<p class="tag">razomaniento</p>
+									<p class="tag">tecnologia</p>
+									<p class="tag">Siglo XXI</p>
+									<p class="tag">politica</p>
+									<p class="tag">razomaniento</p>
+									<p class="tag">tecnologia</p>
+									<p class="tag">cultura</p>
+								</div>
+								<div class="dialog-y">
+									<h3 class="pop">ENTRADAS POPULARES</h3>
+									<h6 class="subtitle"><a href="#"><i class="fa fa-star-o"></i>&nbsp;El hombre y la cultura del Siglo XXI</a></h6>
+									<h6 class="subtitle"><a href="#"><i class="fa fa-star-o"></i>&nbsp;ElementaryOS JUNO 2018 | Linux</a></h6>
+									<h6 class="subtitle"><a href="#"><i class="fa fa-star-o"></i>&nbsp;El hombre y la cultura del Siglo XXI</a></h6>
+								</div>
+							</div>
+					</div>
+			</div>
 	</div>
 	{{> footer}}
-	<script type="text/javascript" href="javascript/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" href="javascript/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/javascripts/script.min.js"></script>
 </body>
 </html>
