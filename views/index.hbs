@@ -1,19 +1,19 @@
+{{# each pubList}}
 <div class="publication"  id="accordion">
-  <h2 class="title">El hombre y la cultura del Siglo XXI
-    <a href="#" class="author-ref">By Javier Doe / Feb,23</a>
+  <h2 class="title">{{this.title}}
+    <a href="#" class="author-ref">By {{this.author}} / date</a>
   </h2>
-  <h3 class="subtitle">Una breve revisión al surgimiento y transformación de la cultura mexicana durante los primeros años tras la inicio de la colonizacion española</h3>
+  <h3 class="subtitle">{{this.subtitle}}</h3>
   <hr>
   <div id="collapseThree" class="collapse"  data-parent="#accordion">
-    <p class="article-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alienim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alienim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ali
-       Ut enim ad minim veniam, quis <img src="/images/demo-blog1.jpg" width="100%">nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <p class="article-p">{{this.content}}<img src="/images/demo-blog1.jpg" width="100%">
     </p>
     <hr>
     <p class="p-tools">
-        <b class="color-theme">123</b><small class="d-none d-md-inline"> Me gusta</small>&nbsp;
+        <b class="color-theme">{{this.likes}}</b><small class="d-none d-md-inline"> Me gusta</small>&nbsp;
         <a href="#" class="likes"><i class="fa fa-thumbs-up"></i></a>
         &nbsp;|&nbsp;
-        <b class="color-theme">43</b><small class="d-none d-md-inline"> No me gusta</small>&nbsp;
+        <b class="color-theme">{{this.dislikes}}</b><small class="d-none d-md-inline"> No me gusta</small>&nbsp;
         <a href="#" class="likes"><i class="fa fa-thumbs-down"></i></a>
     </p>
     <p class="p-tags">
@@ -29,49 +29,4 @@
     </a>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="publication">
-
-  <h2 class="title">ElementaryOS JUNO 2018 | Linux
-    <a href="#" class="author-ref">By Javier Doe / Feb,23</a>
-  </h2>
-  <h3 class="subtitle">La última versión de esta popular distribución por fin llega en 2018</h3>
-  <hr>
-  <div id="collapseThree2" class="collapse"  data-parent="#accordion2">
-    <p class="article-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alienim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alienim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ali
-      Ut enim ad minim veniam, quis <img src="/images/demo-blog2.jpg" width="100%">nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <hr>
-    <p class="p-tools">
-        <b class="color-theme">123</b><small class="d-none d-md-inline"> Me gusta</small>&nbsp;
-        <a href="#" class="likes"><i class="fa fa-thumbs-up"></i></a>
-        &nbsp;|&nbsp;
-        <b class="color-theme">43</b><small class="d-none d-md-inline"> No me gusta</small>&nbsp;
-        <a href="#" class="likes"><i class="fa fa-thumbs-down"></i></a>
-    </p>
-    <p class="p-tags">
-      <a href="#" class="tag d-inline d-md-none">Informatica</a>
-      <a href="#" class="tag d-none d-md-inline">Informatica</a>
-      <a href="#" class="tag d-none d-md-inline">Linux</a>
-      <a href="#" class="tag d-none d-md-inline">2018</a>
-    </p>
-  </div>
-  <div>
-    <a class="collapsed" data-toggle="collapse" data-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
-        Ver más ...
-    </a>
-  </div>
-</div>
+{{/each}}
